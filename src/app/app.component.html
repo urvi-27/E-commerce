@@ -1,0 +1,74 @@
+
+<div>
+<h2 class="container" style="text-align: center;font-family: 'Times New Roman', Times, serif; margin-top:1%;">TrendyStyle</h2></div>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightblue;">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home" style="font-weight: bolder;">TrendyStyle</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+        <li class="nav-item" style="margin-left:-12%;">
+          <a class="nav-link active" aria-current="page" routerLink="/home"><i class="fa fa-home" aria-hidden="true">Home</i></a>
+        </li>
+        <li class="nav-item dropdown" style="margin-left:5%;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-female" aria-hidden="true" style="color: palevioletred;"></i>
+            WOMENS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/womentop">Tops</a></li>
+            <li><a class="dropdown-item" routerLink="/womenjeans">Jeans</a></li>
+            <li><a class="dropdown-item" routerLink="/womensweatpants">Sweatpants</a></li>
+            <li><a class="dropdown-item" routerLink="/womensweatshirt">Sweatshirt</a></li>
+            <li><a class="dropdown-item" routerLink="/womendress">Dress</a></li>
+            <li><a class="dropdown-item" routerLink="/womenshorts">Shorts</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" style="margin-left:5%;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-male" aria-hidden="true" style="color: darkblue;"></i>
+            MENS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/menstshirt">T-shirt</a></li>
+            <li><a class="dropdown-item" routerLink="/menshirt">Shirt</a></li>
+            <li><a class="dropdown-item" routerLink="/mensweatpants">Sweatpants</a></li>
+            <li><a class="dropdown-item" routerLink="/mensweatshirt">Sweatshirt</a></li>
+            <li><a class="dropdown-item" routerLink="/menjeans">Jeans</a></li>
+            <li><a class="dropdown-item" routerLink="/menshort">Shorts</a></li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            KIDS 
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Tops</a></li>
+            <li><a class="dropdown-item" href="#">Jeans</a></li>
+            <li><a class="dropdown-item" href="#">Dress</a></li>
+            <li><a class="dropdown-item" href="#">Shorts</a></li>
+            <li><a class="dropdown-item" href="#">Shirt</a></li>
+            
+          </ul>
+        </li> -->
+        <li class="nav-item ml-auto" style="margin-left:5%;">
+          <a class="nav-link active" aria-current="page" routerLink="/login">Login</a>
+        </li>
+        <!-- <li class="nav-item"  style="margin-left:5%;">
+          <a class="nav-link active" aria-current="page" routerLink="/adminlogin">Admin Login</a>
+        </li> -->
+      </ul>
+      <ul class="navbar-nav mb-2 mb-lg-0 mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link active" aria-current="page" routerLink="/login"><i class="fa fa-sign-out" aria-hidden="true" ></i>Logout</a>
+        </li>
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

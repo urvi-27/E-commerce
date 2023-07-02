@@ -1,0 +1,75 @@
+<style>
+    body{
+       background-color: #E6E6FA;
+       padding-top:1%;
+       padding-bottom:2%;
+   }
+   .form{
+    margin-left:35%;
+       margin-right:25%;
+       margin-top: -51%;
+       border:1px solid black;
+       padding-left:15px;
+       padding-right:15px;
+       background-color: white;
+   }
+</style>
+<body>
+  <div class="header" style="background-color:lightslategray; margin-right:82%;padding-left:5%; margin-left:-8%;padding-top:5%;margin-top:-5%;padding-bottom:36%;">
+    <h4 style="margin-left:23.5%;margin-top:8.5%;">Admin Menu</h4>
+    <div class="side-nav">
+        <a routerLink="/adminhome" style="text-decoration: none;color: black; font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <p style="margin-top:4%; margin-left:23.5%;"><i class="fa fa-home" aria-hidden="true"style="color: darkblue;"></i> Home</p>
+        </a>
+           <a routerLink="/addproducts" style="text-decoration: none;color: black; font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    <p  style="margin-top:-3.5%; margin-left:23.5%;"><i class="fa fa-plus" aria-hidden="true"></i>Add Products</p>
+                </a>
+            <a routerLink="/updateproducts" style="text-decoration: none;color: black; font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    <p style="margin-top:-3%; margin-left:23.5%;"><i class="fa fa-pencil" aria-hidden="true"style="color:green;"></i>Update Products</p>
+                </a>
+            <a routerLink="/deleteproducts" style="text-decoration: none;color: black; font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    <p style="margin-top:-2.5%;margin-left:23.5%;"><i class="fa fa-trash" aria-hidden="true"style="color:darkred;"></i>Delete Products</p>
+                </a>
+                <a routerLink="/adminlogin" style="text-decoration: none;color: black; font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                  <p style="margin-top:-4%;margin-left:23.5%;"><i class="fa fa-sign-out" aria-hidden="true"style="color: darkorange;"></i>Logout</p>
+              </a>
+            <div class="active"></div>
+    </div>
+</div>
+   <form>
+       <div class="form">
+           <h3 style="text-align: center;font-family: 'Times New Roman', Times, serif; padding-top:10%;">Update Products</h3>
+           <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="id">
+            <label for="floatingInput">Enter Product ID</label>
+          </div>
+           <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="floatingInput" placeholder="fullname">
+               <label for="floatingInput">Enter Product Name</label>
+             </div>
+             <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="floatingInput" placeholder="price">
+               <label for="floatingInput">Enter Product Price</label>
+             </div>
+             <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="floatingInput" placeholder="category">
+               <label for="floatingInput">Enter Product Category</label>
+             </div>
+             <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="floatingInput" placeholder="color">
+               <label for="floatingInput">Enter Product Color</label>
+             </div>
+             <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="floatingInput" placeholder="description">
+               <label for="floatingInput">Enter Product description</label>
+             </div>
+             <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="floatingInput" placeholder="url">
+               <label for="floatingInput">Enter Product Image URL</label>
+             </div>
+       <button type="submit" class="btn btn-dark" style="margin-top:-1%;margin-bottom:3%;"><a routerLink=" " style="text-decoration: none;color: white;">Update Product</a></button>
+       </div>
+     </form>
+</body>
+
+
